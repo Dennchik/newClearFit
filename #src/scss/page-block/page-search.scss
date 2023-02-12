@@ -1,0 +1,198 @@
+.page {
+	// .page__search-wrapp
+	&__search-wrapp {
+		flex: 1 1 auto;
+		position: relative;
+		margin-bottom: 22px;
+	}
+	&._open {
+		.search-page__select {
+			&::after {
+				transition-duration: 350ms;
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
+	&__search {
+	}
+}
+.search-page {
+	&__block {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__select {
+		display: flex;
+		align-items: center;
+		padding: 0 14px;
+		cursor: pointer;
+		transition: 0.4s ease-in-out;
+		background-color: #f3f3f3;
+
+		&::before {
+			width: 17px;
+			height: 17px;
+			content: '';
+			background: url('../img/main/lupa.png');
+		}
+
+		&::after {
+			width: 10px;
+			height: 10px;
+			content: '';
+			transition-duration: 350ms;
+			background: url('../img/main/img_arrow.png') center left no-repeat;
+		}
+
+		&:hover {
+			background-color: #e5e2e2;
+		}
+	}
+
+	// .search-page__title
+
+	&__title {
+		font: {
+			size: 14px;
+			weight: 400;
+		}
+		color: #797979;
+
+		span {
+			margin: 0 11px;
+			border-bottom: 1px dashed #999;
+			&:last-child {
+				display: none;
+			}
+		}
+
+		&._category {
+			span {
+				display: none;
+
+				&:last-child {
+					display: block;
+				}
+			}
+		}
+	}
+
+	// .search-page__selected
+
+	&__selected {
+	}
+
+	// .search-page__categories
+	// ?	Для смещения всего контента -  вниз< при открытии "checkbox - поиск(Везде)",
+	// ? поменять "position: absolute" -> на "relative"
+
+	&__categories {
+		z-index: 3;
+		position: relative;
+		top: 100%;
+		left: 0;
+		width: 100%;
+	}
+
+	// .search-page__input
+
+	&__input {
+		flex: 1 1 auto;
+		border-top: 2px solid #f2f2f2;
+		border-bottom: 2px solid #f2f2f2;
+
+		.input {
+			height: 100%;
+		}
+	}
+
+	// .search-page__button
+
+	&__button {
+	}
+}
+
+.categories-search {
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	background-color: #fff;
+	// .categories-search__row
+
+	&__row {
+		display: flex;
+	}
+
+	// .categories-search__column
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 27px 40px;
+
+		&:not(:last-child) {
+			border-right: 1px solid #ddd;
+		}
+	}
+
+	// .categories-search__list
+	&__list {
+		li:not(:last-child) {
+			margin: 0 0 20px 0;
+		}
+	}
+
+	// .categories-search__checkbox
+	&__checkbox {
+		.checkbox__input {
+			&:checked + .checkbox__text {
+				color: #f68038;
+
+				&::before {
+					transition: opacity 0.25s ease-in-out, transform 0.3s ease-in-out;
+					transform: translate3d(-20px, 0, 0) rotate(-90deg);
+					opacity: 1;
+				}
+			}
+		}
+
+		.checkbox__text {
+			letter-spacing: 0.025em;
+			color: #999;
+
+			&::before {
+				position: absolute;
+				width: 10px;
+				height: 7px;
+				content: '';
+				transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+				transform: translate3d(-40px, 0, 0) rotate(-90deg);
+				opacity: 0;
+				background: url('../img/main/single_arrow.png');
+			}
+		}
+	}
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		content: '';
+		background-color: #f68038;
+	}
+}
+.checkbox {
+	// .checkbox__input
+
+	&__input {
+	}
+
+	// .checkbox__text
+
+	&__text {
+	}
+}
+.input {
+}
+.button {
+}

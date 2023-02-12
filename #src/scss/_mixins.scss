@@ -1,0 +1,166 @@
+@mixin font-face($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url('../fonts/#{$file_name}.woff') format('woff'),
+			url('../fonts/#{$file_name}.woff2') format('woff2');
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@mixin _1140 {
+	@media (max-width: 1140px) {
+		@content;
+	}
+}
+
+@mixin _920-1140 {
+	@media (min-width: 920px) and (max-width: 1140px) {
+		@content;
+	}
+}
+
+@mixin _920 {
+	@media (max-width: 920px) {
+		@content;
+	}
+}
+
+@mixin _min-920 {
+	@media (min-width: 920px) {
+		@content;
+	}
+}
+
+@mixin _690-1140 {
+	@media (min-width: 691px) and (max-width: 1140px) {
+		@content;
+	}
+}
+
+@mixin _1140-1024 {
+	@media (min-width: 1024px) and (max-width: 1140px) {
+		@content;
+	}
+}
+
+@mixin _920-1024 {
+	@media (min-width: 920px) and (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin _490-1024 {
+	@media (min-width: 490px) and (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin _690-768 {
+	@media (min-width: 690px) and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin _490-690 {
+	@media (min-width: 490px) and (max-width: 690px) {
+		@content;
+	}
+}
+
+@mixin _min-1140 {
+	@media (min-width: 1140px) {
+		@content;
+	}
+}
+
+@mixin _1024 {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin _min-1024 {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin _690-920 {
+	@media (min-width: 690.98px) and (max-width: 920px) {
+		@content;
+	}
+}
+
+@mixin _375-920 {
+	@media (min-width: 375.98px) and (max-width: 920px) {
+		@content;
+	}
+}
+
+@mixin _min-920 {
+	@media (min-width: 920px) {
+		@content;
+	}
+}
+
+@mixin _768 {
+	@media (max-width: 768.98px) {
+		@content;
+	}
+}
+
+@mixin _690 {
+	@media (max-width: 690.98px) {
+		@content;
+	}
+}
+
+@mixin _min-690 {
+	@media (min-width: 69.98px) {
+		@content;
+	}
+}
+
+@mixin _375-690 {
+	@media (min-width: 375.98px) and (max-width: 690px) {
+		@content;
+	}
+}
+
+@mixin _375-490 {
+	@media (min-width: 376px) and (max-width: 490px) {
+		@content;
+	}
+}
+
+@mixin _490 {
+	@media (max-width: 490px) {
+		@content;
+	}
+}
+
+@mixin _min-490 {
+	@media (min-width: 490px) {
+		@content;
+	}
+}
+
+@mixin _425 {
+	@media (max-width: 425px) {
+		@content;
+	}
+}
+
+@mixin _375 {
+	@media (max-width: 375.98px) {
+		@content;
+	}
+}
+
+@mixin _320 {
+	@media (max-width: 320px) {
+		@content;
+	}
+}

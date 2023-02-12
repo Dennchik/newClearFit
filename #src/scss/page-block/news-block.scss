@@ -1,0 +1,162 @@
+.news-block {
+	padding-left: 2px;
+	&__heading {
+	}
+
+	&__title {
+		font: {
+			family: 'UniSansHeavyCaps';
+			size: 30px;
+			weight: 900;
+		}
+		line-height: 1.2;
+		padding: 45px 0 30px;
+		letter-spacing: 0.025em;
+		text-transform: uppercase;
+		color: $blue;
+	}
+
+	&__text {
+		font: {
+			size: 12px;
+			weight: 900;
+		}
+		line-height: 1.5;
+		text-transform: uppercase;
+		color: $orange;
+	}
+
+	&__info {
+		margin-top: 47px;
+	}
+}
+.info-block {
+	padding-left: 2px;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	&__data {
+		font: {
+			size: 24px;
+			weight: 900;
+		}
+		line-height: 1.2;
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		color: #d8d8d8;
+
+		span {
+			font: {
+				size: 18px;
+				weight: 300;
+			}
+			text-transform: none;
+		}
+	}
+
+	&__text {
+		font: {
+			size: 12px;
+			weight: 300;
+		}
+		line-height: 18px;
+		color: #5b5b5b;
+	}
+
+	&__title {
+		font: {
+			size: 12px;
+			weight: 900;
+		}
+		line-height: 18px;
+		margin-bottom: 22px;
+		text-transform: uppercase;
+		color: #333;
+	}
+}
+.reviews-block {
+	padding-left: 2px;
+	&__title {
+		font: {
+			family: 'UniSansHeavyCaps';
+			size: 30px;
+			weight: 900;
+		}
+		line-height: 1.2;
+		padding: 77px 0 32px;
+		letter-spacing: 0.025em;
+		text-transform: uppercase;
+		color: #dadada;
+	}
+
+	&__comments {
+		// padding-bottom: 39px;
+	}
+}
+.comments {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		color: #333;
+		padding-bottom: 26px;
+
+		&_select {
+			padding-bottom: 12px;
+			color: $blue;
+		}
+	}
+
+	&__user-name {
+		font: {
+			size: 12px;
+			weight: 900;
+		}
+		line-height: 18px;
+		text-transform: uppercase;
+	}
+
+	&__data {
+		font: {
+			size: 12px;
+			weight: 300;
+		}
+		line-height: 18px;
+		text-transform: uppercase;
+		color: $gray;
+
+		&_select {
+			color: $blue;
+		}
+	}
+
+	&__content {
+		font: {
+			size: 12px;
+			weight: 300;
+		}
+		padding: 0 12px 15px 8px;
+		line-height: 18px;
+		color: #5b5b5b;
+		display: flex;
+		gap: 10px;
+		&_select {
+			padding: 15px 12px 15px 8px;
+			color: $fontColor;
+			background-color: $blue;
+		}
+	}
+
+	&__mark {
+		font: {
+			size: 48px;
+			weight: 900;
+		}
+		line-height: 1.2;
+		text-transform: uppercase;
+		color: #dadada;
+	}
+}

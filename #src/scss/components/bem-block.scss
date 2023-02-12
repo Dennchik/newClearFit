@@ -1,0 +1,200 @@
+//*  ---- < {Подключение (Accordions-Collapse)} >
+._collapse:not(._show) {
+	display: none;
+}
+// * -------< Slider > --------------------------
+._card {
+	img {
+		vertical-align: middle;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:before {
+			z-index: 2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+		}
+	}
+}
+._greed-card {
+	overflow: hidden;
+	position: relative;
+	display: grid;
+
+	img {
+		vertical-align: middle;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	> * {
+		grid-area: 1/-1;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+		}
+	}
+}
+
+._card-content {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+// ==============================
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 160px;
+	height: 36px;
+
+	&__back {
+		display: block;
+		width: 33px;
+		height: 29px;
+		background: url('../img/angle_left.png') center left no-repeat;
+	}
+
+	&__forward {
+		display: block;
+		width: 33px;
+		height: 29px;
+		background: url('../img/angle_right.png') center left no-repeat;
+	}
+
+	&__page-number {
+		font-size: 14px;
+		font-weight: 500;
+		color: #999;
+
+		span {
+			font : {
+				size: 30px;
+				weight: 900;
+			}
+
+			line-height: 1.2;
+			letter-spacing: 0.025em;
+			text-transform: uppercase;
+			color: #333;
+		}
+	}
+}
+
+// ? ===== <Button> ======
+.button {
+	font : {
+		size: 12px;
+		weight: 900;
+		family: $font-family;
+	}
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 39px;
+	padding: 0 25px;
+	cursor: pointer;
+	transition: all 0.9s ease 0s;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #f68038;
+
+	@include _min-920 {
+		&:hover {
+			background-color: #aa5926;
+		}
+
+		&._fw {
+			width: 100%;
+		}
+	}
+}
+
+// ? ===== <Input> ======
+.input {
+	display: block;
+	width: 100%;
+	padding: 0 20px;
+	border-radius: 0 !important;
+
+	&._focus {
+	}
+
+	&._error {
+	}
+}
+
+textarea.input {
+	padding: 0 0;
+	resize: none;
+}
+
+// ? ===== <Checkbox> ======
+.checkbox {
+	position: relative;
+
+	// .checkbox__input
+	&__input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+
+	// .checkbox__text
+	&__text {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+	}
+}
+
+//._ibg {
+//	position : relative;
+//}
+//
+//._ibg img {
+//	position   : absolute;
+//	top        : 0;
+//	left       : 0;
+//	width      : 100%;
+//	height     : 100%;
+//	object-fit : cover;
+//}
+//[class*='_img'] {
+//	width          : 100%;
+//	max-width      : 100%;
+//	height         : 100%;
+//	min-height     : 0;
+//	vertical-align : center;
+//	object-fit     : cover;
+//}

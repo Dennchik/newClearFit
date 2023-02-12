@@ -1,0 +1,68 @@
+// todo === Mixins ===
+@import 'mixins';
+// todo === (Шрифты) ===
+@import 'fonts';
+// todo === (Переменные) ===
+@import 'variables';
+
+// todo === Wrapper ===
+// #region
+.wrapper {
+	display: flex;
+	align-items: center;
+	flex: 1 1 auto;
+	flex-direction: column;
+	max-width: $maxWidth;
+	min-height: 100vh;
+	margin: 0 auto;
+	// overflow: hidden;
+}
+
+[class*='_container'] {
+	// border: groove;
+	box-sizing: content-box;
+	max-width: $maxWidthContainer;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+// === Сетка ===
+// [class^='grid-'] {
+// 	display: grid;
+// 	place-self: center;
+// }
+
+[class*='grid-'] {
+	display: grid;
+}
+
+[class*='_stretch'] {
+	position: relative;
+	z-index: 0;
+	min-height: calc(100vh - ($headerHeight + $footerHeight));
+}
+
+// #endregion
+// todo == Reset code ===
+@import 'reset';
+//  Шрифт по умолчанию
+// display=swap&subset=cyrillic-ext
+@import url(https://fonts.googleapis.com/css?family=Gorditas:regular,700);
+// todo === Иконочные шрифты ===
+// @import "icons";
+// todo === Components ===
+@import 'components/bem-block';
+@import 'components/burger-side';
+@import 'components/burger-top-menu';
+@import 'components/loading';
+
+// todo Page Blocks
+@import 'page-block/page-block';
+@import 'page-block/header';
+@import 'page-block/page-sidebar';
+@import 'page-block/news-block';
+@import 'page-block/main-content';
+@import 'page-block/page-search';
+@import 'page-block/page-slider';
+// @import 'page-block/footer';

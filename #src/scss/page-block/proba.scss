@@ -1,0 +1,91 @@
+.wrapper {
+	border: 1px solid #000;
+	border: 1px solid green;
+	border: 1px dotted red;
+	border: 1px dashed #000;
+	margin: 0 0 0 0;
+	margin-top: 0px;
+	border-radius: 1px solid red;
+	&::before {
+		content: '';
+		width: px;
+		height: px;
+		background: url('../img/') center left no-repeat;
+	}
+	&::after {
+		content: '';
+		width: px;
+		height: px;
+		background: url('../img/') center left no-repeat;
+	}
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	width: calc(px + (-) * ((100vw- px) / (-)));
+	transform: translate(x, y);
+	transform: rotate(-90deg);
+	transform: translate3d(-40px, 0, 0) rotate(-90deg);
+	transform: translate3d(tx, ty, tz) rotate();
+	transform: translate3d(-40px, 0, 0) rotate(-90deg);
+	transition: transform 0.3s ease 0s;
+	transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+	transition: background-color 0.6s ease;
+	transition: box-shadow 0.6s ease;
+	transition: transform 0.3s ease 0s;
+	background: url('../img/') center left no-repeat;
+	transform: translate(0, -50%);
+	transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+	transition: transform 0.3s ease 0s;
+	transform: translate3d(-40px, 0, 0) rotate(-90deg);
+	transform: rotate(-90deg);
+	transform: translate(x, y);
+	transform: rotate(-90deg);
+	transition: all 0.9s ease 0s;
+	transition: transform 0.3s ease 0s;
+	transition: all 0.9s ease 0s;
+	background: url('../img/') center left no-repeat;
+	transform: translate3d(-40px, 0, 0) rotate(-90deg);
+	transform: translate(0, -50);
+	transition: transform 0.3s ease 0s;
+	transform: translate(0, -50%);
+	background: url('../../img/main/') center left no-repeat;
+	@media (min-width: px) and (max-width: px) {
+	}
+	@media (max-width: px) {
+	}
+	@media (min-width: px) {
+	}
+	@media (min-width: px) and (max-width: px) {
+	}
+	@mixin _VAR0 {
+		@media (max-width: VAR0px) {
+			@content;
+		}
+	}
+	@mixin _VAR0 {
+		@media (min-width: VAR0px) {
+			@content;
+		}
+	}
+	@mixin _VAR0 {
+		@media (min-width: VAR0px) {
+			@content;
+		}
+	}
+	@mixin _VAR0 {
+		@media (max-width: VAR0px) {
+			@content;
+		}
+	}
+	@mixin _370-920 {
+		@media (min-width: 370px) and (max-width: 920px) {
+			@content;
+		}
+	}
+	transform: translate(0, -50%);
+}
