@@ -3,11 +3,11 @@
 	display: none;
 }
 // * -------< Slider > --------------------------
-._card {
+._card1 {
 	img {
-		vertical-align: middle;
-		width: 100%;
-		object-fit: cover;
+		// vertical-align: middle;
+		// width: 100%;
+		// object-fit: cover;
 	}
 
 	a {
@@ -25,34 +25,34 @@
 		}
 	}
 }
-._greed-card {
+._greed-card1 {
 	overflow: hidden;
-	position: relative;
+	// position: relative;
 	display: grid;
 
-	img {
-		vertical-align: middle;
-		width: 100%;
-		object-fit: cover;
-	}
+	// img {
+	// 	vertical-align: middle;
+	// 	width: 100%;
+	// 	object-fit: cover;
+	// }
 
 	> * {
 		grid-area: 1/-1;
 	}
 
-	a {
-		text-decoration: none;
-		color: inherit;
+	// a {
+	// 	text-decoration: none;
+	// 	color: inherit;
 
-		&:before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			content: '';
-		}
-	}
+	// 	&:before {
+	// 		position: absolute;
+	// 		top: 0;
+	// 		left: 0;
+	// 		width: 100%;
+	// 		height: 100%;
+	// 		content: '';
+	// 	}
+	// }
 }
 
 ._card-content {

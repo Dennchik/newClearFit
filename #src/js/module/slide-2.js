@@ -6,7 +6,7 @@ const slideItemWidth = slides[0].offsetWidth;
 const trackWidth = slideWrap.offsetWidth * slides.length;
 let counterSlide = 0;
 // -----------------------------------------------------------------------------
-setInterval(() => slideNext.call(slides, 1), 3000);
+// setInterval(() => slideNext.call(slides, 1), 3000);
 
 slideNext = () => {
 	if (counterSlide < slides.length - 1) {

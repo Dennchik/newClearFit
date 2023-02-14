@@ -2,8 +2,8 @@
 	// .page__menu
 
 	&__menu {
-		position:  relative;
-		display:   inline-block;
+		position: relative;
+		display: inline-block;
 		min-width: 260px;
 	}
 }
@@ -14,30 +14,30 @@
 	// .menu-page__title
 	&._active {
 		.submenu-page__item {
-			border:                none;
-			box-shadow:            1px 5px 15px 12px hsla(0, 0%, 0%, 0.4);
+			border: none;
+			box-shadow: 1px 5px 15px 12px hsla(0, 0%, 0%, 0.4);
 			grid-template-columns: minmax(24px, auto);
 		}
 	}
 
 	&__title {
-		line-height:     1.2;
-		z-index:         8;
-		top:             153px;
-		display:         flex;
-		align-items:     center;
+		line-height: 1.2;
+		z-index: 8;
+		top: 153px;
+		display: flex;
+		align-items: center;
 		justify-content: space-between;
-		padding:         20px;
-		cursor:          pointer;
-		transition:      transform 0.3s ease in out;
-		letter-spacing:  0.03em;
-		text-transform:  uppercase;
-		background:      url('../img/main/bg_menu_title.png') top no-repeat;
+		padding: 20px;
+		cursor: pointer;
+		transition: transform 0.3s ease in out;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		background: url('../img/main/bg_menu_title.png') top no-repeat;
 
 		h1 {
 			font: {
 				family: 'UniSansHeavyCaps', sans-serif;
-				size:   30px;
+				size: 30px;
 				weight: 900;
 			}
 		}
@@ -72,13 +72,13 @@
 	&__parent {
 		.menu-page__link {
 			&::after {
-				position:   absolute;
-				top:        50%;
-				right:      10px;
-				width:      14px;
-				height:     14px;
-				content:    '';
-				transform:  translate(0, -50%);
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				width: 14px;
+				height: 14px;
+				content: '';
+				transform: translate(0, -50%);
 				background: url('../img/main/menu_arrow.png') center no-repeat;
 			}
 		}
@@ -102,13 +102,13 @@
 	// .menu-page__link
 	&__link {
 		font: {
-			size:   12px;
+			size: 12px;
 			weight: 300;
 		}
 
-		position:       relative;
-		display:        block;
-		padding:        12px 20px;
+		position: relative;
+		display: block;
+		padding: 12px 20px;
 		letter-spacing: 0.025em;
 
 		@include _min-920 {
@@ -120,12 +120,12 @@
 
 	// .menu-page__submenu
 	&__submenu {
-		position:       absolute;
-		top:            0;
-		left:           100%;
-		overflow:       hidden;
-		width:          280px;
-		height:         100%;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		overflow: hidden;
+		width: 280px;
+		height: 100%;
 		pointer-events: none;
 	}
 }
@@ -133,40 +133,40 @@
 .submenu-page {
 	// .submenu-page__item
 	&__item {
-		position:         absolute;
-		z-index:          8;
-		top:              0;
-		left:             0;
-		width:            100%;
-		height:           100%;
-		transition:       all 0.5s ease-in-out;
-		transform:        translate(-100%, 0px);
-		opacity:          0;
-		border:           2px solid #098494;
+		position: absolute;
+		z-index: 8;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: all 0.5s ease-in-out;
+		transform: translate(-100%, 0px);
+		opacity: 0;
+		border: 2px solid #098494;
 		background-color: #fff;
 	}
 
 	// .submenu-page__menu
 	&__menu {
-		padding:       20px 0;
+		padding: 20px 0;
 		border-bottom: 1px solid #dedede;
 	}
 
 	// .submenu-page__link
 	&__link {
 		font: {
-			size:   12px;
+			size: 12px;
 			weight: 400;
 		}
 
-		display:        block;
-		padding:        10px 40px;
+		display: block;
+		padding: 10px 40px;
 		letter-spacing: 0.025em;
-		color:          #1ab9ce;
+		color: #1ab9ce;
 
 		@include _min-920 {
 			&:hover {
-				color:            #fff;
+				color: #fff;
 				background-color: #71c7d3;
 			}
 		}
@@ -180,7 +180,7 @@
 
 .item-product {
 	position: relative;
-	padding:  15px;
+	padding: 15px;
 
 	// .item-product__labels
 	&__labels {
@@ -190,26 +190,26 @@
 	// .item-product__label
 	&__label {
 		font: {
-			size:   14px;
+			size: 14px;
 			weight: 900;
 		}
 
-		display:          flex;
-		align-items:      center;
-		justify-content:  center;
-		width:            105px;
-		height:           21px;
-		margin-bottom:    5px;
-		text-transform:   uppercase;
-		border-radius:    21px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 105px;
+		height: 21px;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		border-radius: 21px;
 		background-color: #fd8424;
 	}
 
 	// .item-product__image
 	&__image {
-		display:     flex;
+		display: flex;
 		align-items: center;
-		height:      195px;
+		height: 195px;
 
 		img {
 			min-width: 100%;

@@ -6,6 +6,7 @@ document.querySelector('.burger-menu').onclick = () => {
 	burgerMenu.classList.toggle('_open');
 	overlay.classList.toggle('_overlay');
 	page.classList.toggle('_fx');
+
 };
 // -----------------------------------------------------------------------------
 // * <{Выпадающий блок 'Side Bar Menu (JS)' & 'Search JS'}> Открытие выпадающих блоков
