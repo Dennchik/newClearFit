@@ -10,7 +10,6 @@
 .wrapper {
 	display: flex;
 	align-items: center;
-	flex: 1 1 auto;
 	flex-direction: column;
 	max-width: $maxWidth;
 	min-height: 100vh;
@@ -18,7 +17,7 @@
 	// overflow: hidden;
 }
 
-[class*='_container'] {
+[class*=' _container'] {
 	// border: groove;
 	box-sizing: content-box;
 	max-width: $maxWidthContainer;
