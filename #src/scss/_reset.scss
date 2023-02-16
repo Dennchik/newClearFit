@@ -51,7 +51,7 @@ h4,
 h5,
 h6 {
 	font: {
-		size: 12px;
+		size: $FontSize;
 		weight: inherit;
 		style: inherit;
 	}
@@ -66,7 +66,7 @@ body {
 		family: $font-family;
 	}
 
-	overflow: hidden;
+	overflow-x: hidden;
 	height: 100%;
 	color: $fontColor;
 	background-color: $bgColor;
