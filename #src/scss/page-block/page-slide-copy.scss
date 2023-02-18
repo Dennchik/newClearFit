@@ -1,3 +1,4 @@
+@ -1,213 +0,0 @@
 // * Slideshow container *//
 .page {
 	// .page__slide
@@ -194,12 +195,14 @@
 
 	// .slide-content__button
 	&__button {
-		display: inline-block;
-		// cursor: pointer;
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
 		font: {
 			size: 116.666667%; /* 14/12 */
 			weight: 900;
 		}
+		cursor: pointer;
 		width: 145px;
 		height: 33px;
 		background-color: rgba(0, 0, 0, 0);
@@ -208,6 +211,13 @@
 		line-height: 200%; /* 24/12 */
 		text-transform: uppercase;
 		color: #fff;
+		
+		&::after {
+			width: 14px;
+			height: 14px;
+			content: '';
+			background: url('../img/main/arrow.png') center left no-repeat;
+		}
 	}
 }
 // ----------------------------------------------------------------------------
